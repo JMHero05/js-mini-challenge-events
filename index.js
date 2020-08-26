@@ -40,7 +40,49 @@ function toggleColor(element) {
   }
 }
 
+const header = document.querySelector('#header')
+
+header.addEventListener('click', function () {
+  toggleColor(header)
+});
+
 
 /***** Deliverable 2 *****/
+const form = document.querySelector('form')
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const playerDiv = document.createElement("div")
+
+  playerDiv.className = "player"
+  playerDiv.dataset.number = form.number.value
+
+  playerDiv.innerHTML = `
+    <h3>${form.name.value} (<em>${form.nickname.value}</em>)</h3>
+    <img src="${form.photo.value}" alt="${form.name.value}">
+    <p class="likes">1000 likes</p>
+    <button class="like-button">❤️</button>
+  `
+
+  playerContainer.append(playerDiv)
+})
+
 
 /***** Deliverable 3 *****/
+
+/* */
+
+const button = document.querySelector("button")
+const likesArr = Array.from(document.querySelectorAll(".player .likes"));
+let likes = document.querySelector(".player .likes")
+
+// for (let i = 0; i < likesArr.length; i++) {
+// function likeButton() {
+button.addEventListener("click", function (e) {
+  let likesText = likes.innerText
+  let value = parseInt(likesText)
+  value = isNaN(value) ? 0 : value;
+  value++;
+  e.target = likes.innerText = value.toString() + ' likes';
+})
+// }

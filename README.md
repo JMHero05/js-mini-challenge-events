@@ -26,7 +26,7 @@ Once you have it working in the console, write an event listener that will use t
 
 **YOUR NOTES**
 ```
-
+This really frustrated me.  The helper method works great, but I had trouble finding the proper way to call it within the method.  Because of the abstraction of accepting an element, it wouldn't allow me to just call it within the addEventListener arguments. I finally found documentation on that, and then I was able to call it within.
 ```
 
 ## Deliverable 2: Create Player
@@ -43,7 +43,7 @@ Some things to keep in mind:
 
 **YOUR NOTES**
 ```
-
+Today's pair programming helped with this.  Not sure if there is a better way of doing this while calling the method within instead of copying and pasting the code with different values.
 ```
 
 ## Deliverable 3: Like Button

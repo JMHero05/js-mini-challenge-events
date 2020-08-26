@@ -1,5 +1,4 @@
-const PLAYERS = [
-  {
+const PLAYERS = [{
     number: 11,
     name: "Mo Salah",
     nickname: "The Egyptian King",
@@ -17,7 +16,7 @@ const PLAYERS = [
     number: 66,
     name: "Trent Alexander-Arnold",
     nickname: "Young Trent",
-    photo: "https://tbrfootball.com/static/uploads/2020/03/GettyImages-1196162385.jpg",
+    photo: "https://pbs.twimg.com/profile_images/1213063090713112576/UqVR8cgJ.jpg",
     likes: 1000
   },
   {
